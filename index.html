@@ -202,8 +202,9 @@
       min-height: 24px;
       text-align: center;
       margin-top: 12px;
-      font-size: 16px;
-      font-weight: 650;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.35;
     }
 
     .range {
@@ -430,7 +431,8 @@ function showResult(distance, angle) {
   currentResult = { distance, angle };
   distanceInput.value = formatDistance(distance);
   angleEl.textContent = `${angle.toFixed(1)}°`;
-  instructionEl.textContent = settingInstruction(angle);
+  instructionEl.textContent =
+    "Note — angle does not account for elevation. If target is lower, increase angle. If target is higher, reduce angle.";
 }
 
 function calculate() {

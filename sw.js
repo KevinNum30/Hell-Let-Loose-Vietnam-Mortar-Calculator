@@ -1,4 +1,4 @@
-const CACHE = "hll-mortar-v1";
+const CACHE = "hll-mortar-v2";
 const FILES = [
   "./",
   "./index.html",
